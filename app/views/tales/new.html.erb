@@ -1,0 +1,19 @@
+<h1>New Tale</h1>
+
+<%= form_tag @tale do %>
+  <p>
+    Title <%= text_field_tag :title %>
+  </p>
+
+  <p>
+    First Page <%= text_area_tag :root_node_content %>
+  </p>
+
+  <p>
+    <%= submit_tag "Create your first page" %><br>
+  </p>
+<% end %>
+
+<p>
+  <i><%= notice %></i>
+</p>
